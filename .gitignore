@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.streamlit/
+.DS_Store
+
+# Event brief test/sample documents — kept locally, not committed to the repo
+*.docx
+*.doc
+*.pdf
+!user_story/**
+
+# GitHub Actions self-hosted runner — binary and credentials, never commit these
+actions-runner/
+actions-runner-win-x64-*.zip
+.credentials
+.credentials_rsaparams
+.runner
+_diag/

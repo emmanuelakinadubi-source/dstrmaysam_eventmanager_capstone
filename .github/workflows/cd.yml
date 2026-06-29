@@ -1,0 +1,14 @@
+name: CD
+
+# CD is handled by AWS CodePipeline (triggered by push to main via GitHub connection).
+# This file is kept as a placeholder so the workflow name appears in GitHub Actions.
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notice:
+    name: Deployment handled by AWS CodePipeline
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CD is managed by AWS CodePipeline. Check the AWS console for deployment status."
